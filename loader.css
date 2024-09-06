@@ -1,0 +1,40 @@
+
+body{
+   place-content: center;
+    background-color: rgba(5, 247, 82, 0.434);
+}
+.save{
+ width: 3cm;
+ height: 1cm;
+position: relative;
+text-align: center;
+margin-top: 25%;
+margin-left: 45%;  
+cursor: pointer;
+display: grid;
+   background-color: rgba(28, 0, 128, 0.662);
+   color: white;
+   outline: none;
+   border: none;
+   transition: 0.3s;
+   
+  
+}
+.loader{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: large;
+    border: 3px solid transparent;
+    border-top-color: white;
+    margin-left: 30%;
+    animation: spin 1s infinite linear;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

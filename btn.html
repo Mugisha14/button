@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <button class="button">Button</button>
+   <div class="active"></div>
+   <style>
+    body{
+        width: 0;
+        height: 0;
+        background-image: linear-gradient(45deg,blue,rgb(199, 207, 228));
+    }
+    .button{
+        width:4cm ;
+        height: 1cm;
+        border-radius: 20px;
+        position: absolute;
+        margin-top: 20%;
+        margin-left: 45%;
+        transition: all ease 0.4s;
+    }
+    .active{
+        width: 50%;
+        height: 50%;
+        border-radius: 50%;
+        transform: rotate 0.4s ease 0.4s infinite;
+        border: black;
+        border-top-color:3px solid transparent ;
+    }
+    @keyframes rotate {
+        0%{
+            transform: rotate(360deg);
+        }
+        
+    }
+   </style>
+
+<script src="https.//cdnjs.cloudflare.com/ajaxs/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function(){
+$(".button").click(function()
+{
+    $(this).addclass("active");
+});
+}
+)
+</script>
+</body>
+</html>
